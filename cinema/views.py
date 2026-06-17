@@ -100,7 +100,6 @@ class MovieViewSet(
 
 
 class MovieSessionViewSet(viewsets.ModelViewSet):
-    
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
     queryset = (
         MovieSession.objects.all()
